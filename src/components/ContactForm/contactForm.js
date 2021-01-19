@@ -2,7 +2,7 @@ import { useState } from 'react';
 import shortid from 'shortid';
 import s from './form.module.css';
 import { useSelector, useDispatch } from 'react-redux';
-import contactsActions from '../../redux/actions';
+import contactsOperations from '../../redux/operations';
 import { getContacts } from '../../redux/selectors';
 
 export default function ContactForm() {
@@ -47,7 +47,7 @@ export default function ContactForm() {
       return;
     }
 
-    dispatch(contactsActions.addContact(name, number));
+    dispatch(contactsOperations.addContact(name, number));
     reset();
   };
 
