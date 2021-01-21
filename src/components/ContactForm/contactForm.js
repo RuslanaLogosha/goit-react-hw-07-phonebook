@@ -2,8 +2,8 @@ import { useState } from 'react';
 import shortid from 'shortid';
 import s from './form.module.css';
 import { useSelector, useDispatch } from 'react-redux';
-import contactsOperations from '../../redux/operations';
-import { getContacts } from '../../redux/selectors';
+import contactsOperations from 'redux/operations';
+import { getContacts } from 'redux/selectors';
 
 export default function ContactForm() {
   const [name, setName] = useState('');

@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import s from './contactList.module.css';
 import { useSelector, useDispatch } from 'react-redux';
-import contactsOperations from '../../redux/operations';
-import { getVisibleContacts } from '../../redux/selectors';
+import contactsOperations from 'redux/operations';
+import { getVisibleContacts } from 'redux/selectors';
 import { useEffect } from 'react';
 
 export default function ContactList() {
